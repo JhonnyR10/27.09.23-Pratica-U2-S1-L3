@@ -1,0 +1,138 @@
+h1{
+text-align: center;
+color: rgb(90 40 15);
+font-size: 45px;
+line-height: 0.9em;
+}
+
+/* CSS OF CARDS */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.description {
+    display: flex;
+    background-color: rgb(253 247 228);
+    flex-direction: row;
+    color: rgb(90 40 15);
+    width: 100%;
+    height: 110px;
+    border-radius: 0px 0px 80px 80px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.5em;
+}
+
+.img-container {
+    background-image: url(../imgs/honey.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.text p {
+    font-size: 0.9em;
+    margin: 0;
+    align-self: center;
+}
+
+.price p {
+    font-size: 1.1em;
+}
+
+button {
+    background-color: rgb(240 223 145);
+    border: 0;
+    border-radius: 30px;
+    color: rgb(90 40 15);
+    width: 230px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+/* smartphone view */
+@media screen and (max-width: 575px){
+   body{
+    padding: 1em;
+   }
+    nav {
+        max-width: 575px;
+        height: 290px;
+        background-color: rgb(253 247 228);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 3em;   
+        }
+    nav ul {
+    list-style-type: none;
+    padding:0em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    align-items: center;
+
+        
+    }
+    nav ul li {
+        background-color: rgb(240 223 145);
+        width: 130px;
+        height: 50px;
+        border-radius: 35px;
+        font-size: 20px;
+        color: rgb(90 40 15);
+        font-weight: 300;  
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    ul li:nth-child(3) {
+        display: flex;
+        padding: 0.8em 2.5em;
+        font-size: 30px;
+        font-weight: 600;
+        order:-1;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li img {
+        margin-right: 20px;
+    }
+
+    #quartaCard,#quintaCard{
+        display:none;
+    }
+
+    .card-container{
+        margin-bottom: 2em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+}

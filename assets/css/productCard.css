@@ -1,0 +1,54 @@
+.card-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.description{
+    display:flex;
+    background-color: rgb(253 247 228);
+    flex-direction: row;
+    color: rgb(90 40 15);
+    width: 250px;
+    height: 110px;
+    border-radius: 0px 0px 80px 80px;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-top: 0.5em;
+}
+.img-container{
+    background-image: url(../imgs/honey.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 80px 80px 0px 0px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h3{
+    font-size: 1em;
+    margin: 0;
+}
+
+.text p{
+    font-size: 0.9em;
+    margin: 0;
+    align-self: center;
+}
+.price p{
+    font-size: 1.1em;
+}
+button{
+    background-color: rgb(240 223 145);
+    border:0;
+    border-radius: 30px;
+    color: rgb(90 40 15);
+    width: 150px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
+}

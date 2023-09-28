@@ -4,6 +4,52 @@ color: rgb(90 40 15);
 font-size: 45px;
 line-height: 0.9em;
 }
+h2{
+text-align: center;
+    color: rgb(90 40 15);
+    font-size:2em ;
+    margin-bottom:0.4em ;
+    
+}
+/*CSS FOR NAV*/
+nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav {
+        background-color: rgb(253 247 228);
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        background-color: rgb(240 223 145);
+        padding: 0.6em 1em;
+        border-radius: 35px;
+        font-size: small;
+        color: rgb(90 40 15);
+        font-weight: 300;
+    }
+
+    ul li:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        padding: 0.4em 0.5em;
+        font-size: 20px;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    li img {
+        margin-right: 20px;
+    }
 
 /* CSS OF CARDS */
 .card-container {
@@ -55,16 +101,57 @@ line-height: 0.9em;
 .price p {
     font-size: 1.1em;
 }
-
+.button{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
 button {
     background-color: rgb(240 223 145);
     border: 0;
     border-radius: 30px;
     color: rgb(90 40 15);
-    width: 230px;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    width: 55%;
+    height: 30px;
     margin-bottom: 0.7em;
+    
+}
+
+/*CSS FOR ARTICLE*/
+article {
+    background-color: rgb(253 247 228);
+    color: rgb(90 40 15);
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-evenly;
+    padding: 1.3em;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 1em;
+    text-align: left;
+
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-img img {
+    width: 100%;
+
+}
+
+.article-text p {
+
+    margin-bottom: 1.5em;
 }
 
 /* smartphone view */
@@ -73,47 +160,32 @@ button {
     padding: 1em;
    }
     nav {
-        max-width: 575px;
         height: 290px;
-        background-color: rgb(253 247 228);
         border-radius: 100px;
-        display: flex;
         justify-content: center; 
         margin-bottom: 3em;   
+        align-items: unset;
         }
     nav ul {
-    list-style-type: none;
-    padding:0em;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly ;
-    align-items: center;
-
-        
     }
     nav ul li {
-        background-color: rgb(240 223 145);
-        width: 130px;
-        height: 50px;
-        border-radius: 35px;
+       padding: 0;
+        width: 38%;
+      height: 18%;
         font-size: 20px;
-        color: rgb(90 40 15);
-        font-weight: 300;  
         display: flex;
        align-items: center;
        justify-content: center;
     }
 
     ul li:nth-child(3) {
-        display: flex;
         padding: 0.8em 2.5em;
         font-size: 30px;
-        font-weight: 600;
         order:-1;
         border-radius: 50px;
         justify-content: center;
-        align-items: center;
     }
 
     li img {
@@ -135,4 +207,269 @@ button {
     }
  
 
+}
+
+@media screen and (min-width: 576px) and (max-width:768px){
+    body{
+       margin:0; 
+    }
+   .card,article{
+       margin: 1em;; 
+    }
+    h1,h2{
+        text-align:left;
+        margin:1em 16px;
+    }
+    h2{
+        text-align: left;
+    }
+
+    li img {
+        margin-right: 20px;
+    }
+         #quintaCard
+          {
+             display: none;
+         }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .card-container{
+            width: 48%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5em;
+        }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){
+main{
+    margin-left: 250px;
+}
+h1,h2{
+    text-align: left;
+    padding-left: 0.3em;
+}
+    nav{
+       position: fixed;
+       top: 0;
+       width: 230px;
+      height: 100%;
+       left: 0;
+       align-items: start;
+      
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80%;
+    }
+        nav ul li {
+            padding: 0;
+            width: 80%;
+            height: 12%;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    
+        ul li:nth-child(3) {
+            width: 70%;
+            height: 10%;
+            font-size: 30px;
+            order: -1;
+            border-radius: 50px;
+            justify-content: center;
+        }
+    
+        li img {
+            margin-right: 20px;
+        }
+         #quartaCard,
+         #quintaCard {
+             display: none;
+     }
+   .card {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+
+   .card-container {
+       width: 30%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 1.5em;
+   }
+     .description{
+      height: 58%;
+     }
+     
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199.8px) {
+    main {
+            margin-left: 250px;
+        }
+    
+        h1,
+        h2 {
+            text-align: left;
+            padding-left: 0.3em;
+        }
+    
+        nav {
+            position: fixed;
+            top: 0;
+            width: 230px;
+            height: 100%;
+            left: 0;
+            align-items: start;
+    
+        }
+    
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 80%;
+        }
+    
+        nav ul li {
+            padding: 0;
+            width: 80%;
+            height: 12%;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    
+        ul li:nth-child(3) {
+            width: 70%;
+            height: 10%;
+            font-size: 30px;
+            order: -1;
+            border-radius: 50px;
+            justify-content: center;
+        }
+    
+        li img {
+            margin-right: 20px;
+        }
+    
+       
+        #quintaCard {
+            display: none;
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .card-container {
+            width: 23%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5em;
+        }
+    
+        .description {
+            height: 58%;
+        }
+    
+}
+@media screen and (min-width: 1200px) {
+    main {
+            margin-left: 250px;
+        }
+    
+        h1,
+        h2 {
+            text-align: left;
+            padding-left: 0.3em;
+        }
+    
+        nav {
+            position: fixed;
+            top: 0;
+            width: 230px;
+            height: 100%;
+            left: 0;
+            align-items: start;
+    
+        }
+    
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 80%;
+        }
+    
+        nav ul li {
+            padding: 0;
+            width: 80%;
+            height: 12%;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    
+        ul li:nth-child(3) {
+            width: 70%;
+            height: 10%;
+            font-size: 30px;
+            order: -1;
+            border-radius: 50px;
+            justify-content: center;
+        }
+    
+        li img {
+            margin-right: 20px;
+        }
+    
+    
+      
+    
+        .card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .card-container {
+            width: 18%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5em;
+        }
+    
+        .description {
+            height: 58%;
+        }
 }
